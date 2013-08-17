@@ -1,0 +1,12 @@
+.animateProperty(@property: color; @duration: 0.25s; @easing: ease-in-out) {
+	-webkit-transition: @arguments;
+	-moz-transition: @arguments;
+	-o-transition: @arguments;
+	transition: @arguments;
+}
+
+.columns(@width: 100px; @count: 3) {
+	-webkit-columns: @width @count;
+	-moz-columns: @width @count;
+	columns: @width @count;
+}

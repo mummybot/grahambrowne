@@ -23,5 +23,6 @@
 	</div><!-- #page -->
 
 	<?php wp_footer(); ?>
+	<script src="http://dev.grahambrowne:35729/livereload.js"></script>
 </body>
 </html>

@@ -94,15 +94,6 @@ function twentythirteen_header_style() {
 	?>
 	<style type="text/css" id="twentythirteen-header-css">
 	<?php
-		if ( ! empty( $header_image ) ) :
-	?>
-		.site-header {
-			background: url(<?php header_image(); ?>) no-repeat scroll top;
-			background-size: 1600px auto;
-		}
-	<?php
-		endif;
-
 		// Has the text been hidden?
 		if ( ! display_header_text() ) :
 	?>
@@ -113,22 +104,8 @@ function twentythirteen_header_style() {
 			clip: rect(1px, 1px, 1px, 1px);
 		}
 	<?php
-			if ( empty( $header_image ) ) :
-	?>
-		.site-header .home-link {
-			min-height: 0;
-		}
-	<?php
 			endif;
-
-		// If the user has set a custom color for the text, use that.
-		elseif ( $text_color != get_theme_support( 'custom-header', 'default-text-color' ) ) :
 	?>
-		.site-title,
-		.site-description {
-			color: #<?php echo esc_attr( $text_color ); ?>;
-		}
-	<?php endif; ?>
 	</style>
 	<?php
 }

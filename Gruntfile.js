@@ -19,7 +19,8 @@ module.exports = function(grunt) {
                     // yuicompress: true
                 },
                 files: {
-                    "./style.css": "./less/style.less"
+                    "./style.css": "./less/style.less",
+                    "./css/editor-style.css": "./less/editor-style.less"
                 }
             }
         },

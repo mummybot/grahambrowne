@@ -17,34 +17,13 @@ Description: Used to style the TinyMCE editor.
  * ----------------------------------------------------------------------------
  */
 /**
- * Variables to edit
- * ----------------------------------------------------------------------------
- */
-/**
- * Variables that shouldn't be edited
- * ----------------------------------------------------------------------------
- */
-@font-face {
-  font-family: 'Conv_ACaslonPro-Italic';
-  src: url('fonts/ACaslonPro-Italic.eot');
-  src: local('☺'), url('fonts/ACaslonPro-Italic.woff') format('woff'), url('fonts/ACaslonPro-Italic.ttf') format('truetype'), url('fonts/ACaslonPro-Italic.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Conv_ACaslonPro-Bold';
-  src: url('fonts/ACaslonPro-Bold.eot');
-  src: local('☺'), url('fonts/ACaslonPro-Bold.woff') format('woff'), url('fonts/ACaslonPro-Bold.ttf') format('truetype'), url('fonts/ACaslonPro-Bold.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-/**
  * 1.0 Body
  * ----------------------------------------------------------------------------
  */
 html .mceContentBody {
   font-size: 100%;
   max-width: 604px;
+  color: #000;
 }
 body {
   color: #141412;
@@ -326,7 +305,7 @@ img {
  */
 /* Aside */
 .post-format-aside {
-  background-color: #ced5e9;
+  background-color: #f7f5e7;
 }
 .post-format-aside blockquote {
   font-size: 100%;
@@ -342,10 +321,10 @@ img {
 }
 /* Audio */
 .post-format-audio {
-  background-color: #8892be;
+  background-color: #db572f;
 }
 .post-format-audio a {
-  color: #2a1b32;
+  color: #fbfaf3;
 }
 .post-format-audio:before {
   background: url(../images/dotted-line.png) repeat-y 85px 0;
@@ -362,34 +341,35 @@ img {
 }
 /* Chat */
 .post-format-chat {
-  background-color: #ced5e9;
+  background-color: #eadaa6;
 }
 .post-format-chat a {
-  color: #2a1b32;
+  color: #722d19;
 }
 /* Gallery */
 .post-format-gallery {
-  background-color: #8892be;
+  background-color: #fbca3c;
 }
 .post-format-gallery a {
-  color: #2a1b32;
+  color: #722d19;
 }
 /* Image: same as Standard/Defaults */
 /* Link */
 .post-format-link {
-  background-color: #ced5e9;
+  background-color: #f7f5e7;
 }
 /* Quote */
 .post-format-quote {
-  background-color: #3b2646;
-  color: #d9deee;
+  background-color: #210d10;
+  color: #f7f5e7;
 }
 .post-format-quote a {
-  color: #d9deee;
+  color: #e63f2a;
 }
 .post-format-quote blockquote {
-  font-family: "Conv_ACaslonPro-Italic", Georgia, serif;
   font-size: 28px;
+  font-style: italic;
+  font-weight: 300;
   margin: 0;
   padding-left: 75px;
   position: relative;
@@ -418,14 +398,15 @@ img {
 }
 /* Status */
 .post-format-status {
-  background-color: #3b2646;
-  color: #d9deee;
+  background-color: #722d19;
+  color: #f7f5e7;
+  font-style: italic;
+  font-weight: 300;
   padding: 0;
   padding-left: 35px;
 }
 .post-format-status.mceContentBody {
-  font-family: "Conv_ACaslonPro-Italic", Georgia, serif;
-  font-size: 28px;
+  font-size: 24px;
 }
 .post-format-status:before {
   background: url(../images/dotted-line.png) repeat-y left bottom;
@@ -452,10 +433,10 @@ img {
 }
 /* Video */
 .post-format-video {
-  background-color: #8892be;
+  background-color: #db572f;
 }
 .post-format-video a {
-  color: #2a1b32;
+  color: #fbfaf3;
 }
 /**
  * 9.0 RTL

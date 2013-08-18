@@ -1,9 +1,27 @@
+/**
+ * Variables to edit
+ * ----------------------------------------------------------------------------
+ */
 @color: rgb(25, 29, 46);
 @bgColor: rgb(217, 222, 238);
 @linkColor: rgb(42, 27, 50);
+@errorColor: rgb(125, 29, 46);
 
 @headingColor: @bgColor;
 @headingBgColor: rgb(42, 27, 50);
 @headingMenuBgColor: darken(@headingBgColor, 4%);
 
 @footerBgColor: @headingMenuBgColor;
+
+@fontHeading: "Conv_ACaslonPro-Italic", Georgia, serif;
+@fontSubHeading: "Conv_ACaslonPro-Bold", Georgia, serif;
+@fontBody: "Helvetica Neue", Helvetica, serif;
+
+/**
+ * Variables that shouldn't be edited
+ * ----------------------------------------------------------------------------
+ */
+@linkColorHover: lighten(@linkColor, 5%);
+
+@bgColorComponent: darken(@bgColor, 3%);
+@bgColorComponentHighlight: lighten(@color, 50%);

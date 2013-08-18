@@ -43,6 +43,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * 9.0 - Print
  * ----------------------------------------------------------------------------
  */
+/**
+ * Variables to edit
+ * ----------------------------------------------------------------------------
+ */
+/**
+ * Variables that shouldn't be edited
+ * ----------------------------------------------------------------------------
+ */
 @font-face {
   font-family: 'Conv_ACaslonPro-Italic';
   src: url('fonts/ACaslonPro-Italic.eot');
@@ -142,7 +150,7 @@ h4,
 h5,
 h6 {
   clear: both;
-  font-family: Conv_ACaslonPro-Italic, Georgia, serif;
+  font-family: "Conv_ACaslonPro-Italic", Georgia, serif;
   line-height: 1.3;
 }
 h1 {
@@ -202,8 +210,8 @@ samp {
   hyphens: none;
 }
 pre {
-  background: #f5f5f5;
-  color: #666;
+  background: #ced5e9;
+  color: #07080d;
   font-family: monospace;
   font-size: 14px;
   margin: 20px 0;
@@ -229,9 +237,8 @@ q:after {
   content: none;
 }
 blockquote {
+  font-family: "Conv_ACaslonPro-Italic", Georgia, serif;
   font-size: 18px;
-  font-style: italic;
-  font-weight: 300;
   margin: 24px 40px;
 }
 blockquote blockquote {
@@ -310,7 +317,7 @@ form {
   margin: 0;
 }
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid #c0c9e3;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -367,7 +374,7 @@ textarea {
   vertical-align: top;
 }
 table {
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid #c0c9e3;
   border-collapse: collapse;
   border-spacing: 0;
   font-size: 14px;
@@ -390,14 +397,14 @@ th {
   text-transform: uppercase;
 }
 td {
-  border-top: 1px solid #ededed;
+  border-top: 1px solid #c0c9e3;
   padding: 6px 10px 6px 0;
 }
 del {
-  color: #333;
+  color: #c0c9e3;
 }
 ins {
-  background: #fff9c0;
+  background: #c7cfe6;
   text-decoration: none;
 }
 hr {
@@ -555,10 +562,10 @@ input[type="reset"]:focus {
   background: #382443;
   /* Old browsers */
 
-  background: -webkit-linear-gradient(top, #2a1b32 5%, #462d53 100%);
+  background: -webkit-linear-gradient(top, #382443, #462d53 100%);
   /* Chrome 10+, Safari 5.1+ */
 
-  background: linear-gradient(to bottom, #2a1b32 5%, #462d53 100%);
+  background: linear-gradient(to bottom, #382443, #462d53 100%);
   /* W3C */
 
   outline: none;
@@ -589,16 +596,16 @@ input[type="reset"]:active {
 }
 /* Placeholder text color -- selectors need to be separate to work. */
 ::-webkit-input-placeholder {
-  color: #7d7b6d;
+  color: #c0c9e3;
 }
 :-moz-placeholder {
-  color: #7d7b6d;
+  color: #c0c9e3;
 }
 ::-moz-placeholder {
-  color: #7d7b6d;
+  color: #c0c9e3;
 }
 :-ms-input-placeholder {
-  color: #7d7b6d;
+  color: #c0c9e3;
 }
 /*
  * Responsive images
@@ -671,7 +678,7 @@ img.alignnone {
 .wp-caption .wp-caption-text,
 .entry-caption,
 .gallery-caption {
-  color: #220e10;
+  color: #191d2e;
   font-size: 18px;
   font-style: italic;
   font-weight: 300;
@@ -747,7 +754,7 @@ img.wp-smiley,
   padding-top: 25px;
 }
 .site-description {
-  font: 14px Conv_ACaslonPro-Bold, Georgia, serif;
+  font: 14px "Conv_ACaslonPro-Bold", Georgia, serif;
   text-transform: uppercase;
   margin: 0;
 }
@@ -757,7 +764,7 @@ img.wp-smiley,
  */
 .main-navigation {
   clear: both;
-  font: 24px Conv_ACaslonPro-Italic;
+  font: 24px "Conv_ACaslonPro-Italic", Georgia, serif;
   margin: 0 auto;
   max-width: 1080px;
   min-height: 45px;
@@ -837,7 +844,8 @@ ul.nav-menu li:hover > ul,
   background-position: 5px center;
   background-repeat: no-repeat;
   background-size: 24px 24px;
-  border: none;
+  border: 2px solid transparent;
+  font-family: Helvetica;
   cursor: pointer;
   height: 37px;
   margin: 3px 0;
@@ -848,8 +856,8 @@ ul.nav-menu li:hover > ul,
   width: 0;
 }
 .site-header .search-field:focus {
-  background-color: #fff;
-  border: 2px solid #c3c0ab;
+  background-color: #f2f3f9;
+  border: 2px solid #93a1ce;
   cursor: text;
   outline: 0;
   width: 230px;
@@ -1014,8 +1022,8 @@ footer.entry-meta {
 }
 .page-links a,
 .page-links > span {
-  background: #fff;
-  border: 1px solid #fff;
+  background: #d9deee;
+  border: 1px solid #d9deee;
   padding: 5px 10px;
   text-decoration: none;
 }
@@ -1024,9 +1032,9 @@ footer.entry-meta {
 .format-chat .entry-content .page-links a,
 .format-quote .entry-content .page-links a,
 .page-links a {
-  background: #e63f2a;
-  border: 1px solid #e63f2a;
-  color: #fff;
+  background: #382443;
+  border: 1px solid #382443;
+  color: #d9deee;
 }
 .format-gallery .entry-content .page-links a:hover,
 .format-audio .entry-content .page-links a:hover,
@@ -1035,8 +1043,8 @@ footer.entry-meta {
 .format-chat .entry-content .page-links a:hover,
 .format-quote .entry-content .page-links a:hover,
 .page-links a:hover {
-  background: #fff;
-  color: #e63f2a;
+  background: #d9deee;
+  color: #382443;
 }
 .format-status .entry-content .page-links > span,
 .format-quote .entry-content .page-links > span {
@@ -1051,18 +1059,18 @@ footer.entry-meta {
 /* Mediaelements */
 .hentry .mejs-mediaelement,
 .hentry .mejs-container .mejs-controls {
-  background: #220e10;
+  background: #1f1425;
 }
 .hentry .mejs-controls .mejs-time-rail .mejs-time-loaded,
 .hentry .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
-  background: #fff;
+  background: #d9deee;
 }
 .hentry .mejs-controls .mejs-time-rail .mejs-time-current {
-  background: #ea9629;
+  background: #2a1b32;
 }
 .hentry .mejs-controls .mejs-time-rail .mejs-time-total,
 .hentry .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
-  background: #595959;
+  background: #462d53;
 }
 .hentry .mejs-controls .mejs-time-rail span,
 .hentry .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total,
@@ -1138,7 +1146,7 @@ footer.entry-meta {
 .gallery-caption {
   background-color: rgba(0, 0, 0, 0.7);
   box-sizing: border-box;
-  color: #fff;
+  color: #d9deee;
   font-size: 14px;
   line-height: 1.3;
   margin: 0;
@@ -1154,7 +1162,7 @@ footer.entry-meta {
   width: 100%;
 }
 .gallery-caption:before {
-  box-shadow: 0 -10px 15px #000000 inset;
+  box-shadow: 0 -10px 15px #191d2e inset;
   content: "";
   height: 100%;
   min-height: 49px;
@@ -1177,7 +1185,7 @@ footer.entry-meta {
  */
 /* Aside */
 .format-aside {
-  background-color: #f7f5e7;
+  background-color: #ced5e9;
 }
 .blog .format-aside:first-of-type,
 .single .format-aside:first-of-type,
@@ -1203,10 +1211,10 @@ footer.entry-meta {
 }
 /* Audio */
 .format-audio {
-  background-color: #db572f;
+  background-color: #8892be;
 }
 .format-audio .entry-title {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: bold;
 }
 .format-audio .entry-content:before {
@@ -1217,10 +1225,12 @@ footer.entry-meta {
   top: 4px;
 }
 .format-audio .entry-content a,
-.format-audio .entry-meta a,
+.format-audio .entry-meta a {
+  color: #2a1b32;
+}
 .format-audio .entry-content a:hover,
 .format-audio .entry-meta a:hover {
-  color: #fbfaf3;
+  color: #382443;
 }
 .format-audio .audio-content {
   background: url(images/dotted-line.png) repeat-y left top;
@@ -1228,8 +1238,6 @@ footer.entry-meta {
   float: right;
   padding-left: 35px;
   width: 80%;
-  width: -webkit-calc(15%);
-  width: calc(15%);
 }
 .format-audio .wp-audio-shortcode {
   height: 30px !important;
@@ -1247,15 +1255,18 @@ footer.entry-meta {
 }
 /* Chat */
 .format-chat {
-  background-color: #eadaa6;
+  background-color: #ced5e9;
 }
 .format-chat .entry-title {
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 36px;
 }
 .format-chat .entry-meta a,
 .format-chat .entry-content a {
-  color: #722d19;
+  color: #2a1b32;
+}
+.format-chat .entry-meta a:hover,
+.format-chat .entry-content a:hover {
+  color: #382443;
 }
 .format-chat .entry-meta .date a:before {
   content: "\f108";
@@ -1268,7 +1279,7 @@ footer.entry-meta {
   margin: 0;
 }
 .format-chat .chat .chat-timestamp {
-  color: #722d19;
+  color: #191d2e;
   float: right;
   font-size: 12px;
   font-weight: normal;
@@ -1279,24 +1290,22 @@ footer.entry-meta {
 }
 /* Gallery */
 .format-gallery {
-  background-color: #fbca3c;
+  background-color: #8892be;
 }
 .format-gallery .entry-header {
   margin-bottom: 15px;
 }
 .format-gallery .entry-title {
-  font-size: 50px;
-  font-weight: 400;
+  font-size: 36px;
   margin: 0;
 }
 .format-gallery .entry-meta a,
 .format-gallery .entry-content a {
-  color: #722d19;
+  color: #2a1b32;
 }
 /* Image */
 .format-image .entry-title {
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 36px;
 }
 .format-image .categories-links,
 .format-image .tags-links {
@@ -1304,7 +1313,7 @@ footer.entry-meta {
 }
 /* Link */
 .format-link {
-  background-color: #f7f5e7;
+  background-color: #ced5e9;
 }
 .blog .format-link:first-of-type,
 .single .format-link:first-of-type {
@@ -1315,7 +1324,7 @@ footer.entry-meta {
   margin-bottom: 0;
 }
 .format-link .entry-title {
-  color: #ca3c08;
+  color: #2a1b32;
   display: inline;
   font-size: 28px;
   margin-right: 20px;
@@ -1328,11 +1337,11 @@ footer.entry-meta {
 }
 /* Quote */
 .format-quote {
-  background-color: #210d10;
+  background-color: #3b2646;
 }
 .format-quote .entry-content,
 .format-quote .entry-meta {
-  color: #f7f5e7;
+  color: #d9deee;
 }
 .format-quote .entry-content blockquote {
   font-size: 28px;
@@ -1341,11 +1350,11 @@ footer.entry-meta {
 .format-quote .entry-content a,
 .format-quote .entry-meta a,
 .format-quote .linked {
-  color: #e63f2a;
+  color: #d9deee;
 }
 .format-quote .entry-content cite a {
-  border-bottom: 1px dotted #fff;
-  color: #fff;
+  border-bottom: 1px dotted #191d2e;
+  color: #d9deee;
 }
 .format-quote .entry-content cite a:hover {
   text-decoration: none;
@@ -1356,8 +1365,6 @@ footer.entry-meta {
   font-size: 16px;
 }
 .format-quote blockquote {
-  font-style: italic;
-  font-weight: 300;
   padding-left: 75px;
   position: relative;
 }
@@ -1376,7 +1383,7 @@ footer.entry-meta {
 }
 /* Status */
 .format-status {
-  background-color: #722d19;
+  background-color: #3b2646;
   padding: 0;
 }
 .format-status .entry-content,
@@ -1385,10 +1392,10 @@ footer.entry-meta {
   position: relative;
 }
 .format-status .entry-content a {
-  color: #eadaa6;
+  color: #d9deee;
 }
 .format-status .entry-meta a {
-  color: #f7f5e7;
+  color: #d9deee;
 }
 .sidebar .format-status .entry-content,
 .sidebar .format-status .entry-meta {
@@ -1419,10 +1426,9 @@ footer.entry-meta {
   background-position: left top;
 }
 .format-status .entry-content {
-  color: #f7f5e7;
-  font-size: 24px;
-  font-style: italic;
-  font-weight: 300;
+  color: #d9deee;
+  font-family: "Conv_ACaslonPro-Italic", Georgia, serif;
+  font-size: 28px;
   padding-bottom: 30px;
   padding-top: 40px;
   position: relative;
@@ -1451,27 +1457,29 @@ footer.entry-meta {
 }
 /* Video */
 .format-video {
-  background-color: #db572f;
+  background-color: #8892be;
 }
 .format-video .entry-content a,
-.format-video .entry-meta a,
+.format-video .entry-meta a {
+  color: #2a1b32;
+}
 .format-video .entry-content a:hover,
 .format-video .entry-meta a:hover {
-  color: #fbfaf3;
+  color: #382443;
 }
 .format-video .entry-title {
   font-size: 50px;
   font-weight: 400;
 }
 .format-video .entry-meta {
-  color: #220e10;
+  color: #191d2e;
 }
 /**
  * 5.6 Attachments
  * ----------------------------------------------------------------------------
  */
 .attachment .hentry {
-  background-color: #e8e5ce;
+  background-color: #ced5e9;
   margin: 0;
   padding: 0;
 }
@@ -1518,10 +1526,10 @@ footer.entry-meta {
 .attachment .entry-meta a,
 .attachment .entry-meta .edit-link:before,
 .attachment .full-size-link:before {
-  color: #ca3c08;
+  color: #2a1b32;
 }
 .attachment .entry-content {
-  background-color: #fff;
+  background-color: #d9deee;
   max-width: 100%;
   padding: 40px 0;
 }
@@ -1587,8 +1595,8 @@ footer.entry-meta {
   text-decoration: none;
 }
 .paging-navigation {
-  background-color: #c7cfe6;
-  font-family: Conv_ACaslonPro-Bold, Georgia, serif;
+  background-color: #ced5e9;
+  font-family: "Conv_ACaslonPro-Bold", Georgia, serif;
   text-transform: uppercase;
   padding: 40px 0;
 }
@@ -1610,7 +1618,7 @@ footer.entry-meta {
 .paging-navigation .meta-nav {
   background-color: #2a1b32;
   border-radius: 50%;
-  color: #fff;
+  color: #d9deee;
   display: inline-block;
   font-size: 26px;
   padding: 8px 0 3px;
@@ -1630,11 +1638,11 @@ footer.entry-meta {
   text-decoration: none;
 }
 .post-navigation {
-  background-color: #fff;
-  color: #ca3c08;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 300;
+  background-color: #d4d9ec;
+  color: #2a1b32;
+  font-size: 18px;
+  font-family: "Conv_ACaslonPro-Bold", Georgia, serif;
+  text-transform: uppercase;
   padding: 20px 0;
 }
 .post-navigation .nav-links {
@@ -1673,7 +1681,7 @@ footer.entry-meta {
   margin: 0 30px 30px 0;
 }
 .single-format-status .author-description {
-  color: #f7f5e7;
+  color: #d9deee;
 }
 .author-description .author-title {
   clear: none;
@@ -1681,7 +1689,7 @@ footer.entry-meta {
   margin: 0 0 8px;
 }
 .author-link {
-  color: #ca3c08;
+  color: #2a1b32;
   margin-left: 2px;
 }
 .author.archive .author-link {
@@ -1886,12 +1894,12 @@ footer.entry-meta {
   margin-bottom: 20px;
 }
 .ping-meta {
-  color: #a2a2a2;
+  color: #2b324f;
   font-size: 13px;
   line-height: 2;
 }
 .comment-awaiting-moderation {
-  color: #a2a2a2;
+  color: #2b324f;
 }
 .comment-awaiting-moderation:before {
   content: "\f414";
@@ -1917,7 +1925,7 @@ footer.entry-meta {
   font-size: 28px;
 }
 .comment-reply-title small a {
-  color: #131310;
+  color: #2a1b32;
   display: inline-block;
   float: right;
   height: 16px;
@@ -1925,7 +1933,7 @@ footer.entry-meta {
   width: 16px;
 }
 .comment-reply-title small a:hover {
-  color: #ed331c;
+  color: #382443;
   text-decoration: none;
 }
 .comment-reply-title small a:before {
@@ -1953,7 +1961,7 @@ footer.entry-meta {
   width: 120px;
 }
 .comment-form .required {
-  color: #ed331c;
+  color: #7d1d2e;
 }
 .comment-form input[type="text"],
 .comment-form input[type="email"],
@@ -1966,7 +1974,7 @@ footer.entry-meta {
 }
 .form-allowed-tags,
 .form-allowed-tags code {
-  color: #686758;
+  color: #191d2e;
   font-size: 12px;
 }
 .form-allowed-tags code {
@@ -1987,7 +1995,7 @@ footer.entry-meta {
   width: 100%;
 }
 .no-comments {
-  background-color: #f7f5e7;
+  background-color: #ced5e9;
   font-size: 20px;
   font-style: italic;
   font-weight: 300;
@@ -2046,7 +2054,7 @@ footer.entry-meta {
   word-wrap: break-word;
 }
 .widget .widget-title {
-  font: 18px Conv_ACaslonPro-Bold, Georgia, serif;
+  font: 18px "Conv_ACaslonPro-Bold", Georgia, serif;
   margin: 0 0 10px;
   text-transform: uppercase;
 }
@@ -2070,7 +2078,7 @@ footer.entry-meta {
   color: #2a1b32;
 }
 .widget a:hover {
-  color: #ea9629;
+  color: #382443;
 }
 /* Search widget */
 .search-form .search-submit {
@@ -2082,7 +2090,7 @@ footer.entry-meta {
 }
 .widget_rss .rss-date,
 .widget_rss li > cite {
-  color: #a2a2a2;
+  color: #10131d;
 }
 /* Calendar Widget */
 .widget_calendar table,
@@ -2131,7 +2139,7 @@ footer.entry-meta {
   text-align: left;
 }
 .site-footer a {
-  color: #686758;
+  color: #2a1b32;
 }
 .site-footer .sidebar-container {
   background-color: #1f1425;
@@ -2149,7 +2157,7 @@ footer.entry-meta {
 }
 .site-footer .widget {
   background: transparent;
-  color: #fff;
+  color: #d9deee;
   float: left;
   margin-right: 20px;
   width: 245px;
@@ -2371,7 +2379,7 @@ footer.entry-meta {
     color: #d9deee;
     cursor: pointer;
     display: inline-block;
-    font: 16px/1.3 Conv_ACaslonPro-Bold, Georgia, serif;
+    font: 16px/1.3 "Conv_ACaslonPro-Bold", Georgia, serif;
     margin: 0;
     padding: 12px 0 12px 20px;
     text-transform: uppercase;
@@ -2582,7 +2590,7 @@ footer.entry-meta {
     min-height: 0;
   }
   .site-title {
-    color: #000;
+    color: #191d2e;
     font-size: 21pt;
   }
   .site-description {
@@ -2616,7 +2624,7 @@ footer.entry-meta {
   }
   .entry-meta,
   .entry-meta a {
-    color: #444;
+    color: #07080d;
     font-size: 10pt;
   }
   .entry-content img.alignleft,
@@ -2632,7 +2640,7 @@ footer.entry-meta {
   }
   /* Remove colors from post formats */
   .hentry {
-    background-color: #fff;
+    background-color: #d9deee;
   }
   /* Comments */
   .comments-area > li.comment {
@@ -2646,7 +2654,7 @@ footer.entry-meta {
   .comment-author .fn,
   .comment-reply-link,
   .comment-reply-login {
-    color: #333;
+    color: #2a1b32;
   }
 }
 /**

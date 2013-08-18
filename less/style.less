@@ -1098,7 +1098,6 @@ ul.nav-menu li:hover > ul,
 	hyphens:         auto;
 	word-wrap: break-word;
 	.columns();
-	min-height: 200px;
 }
 
 .entry-content a,
@@ -1223,8 +1222,7 @@ footer.entry-meta {
  */
 
 .gallery {
-	margin-bottom: 20px;
-	margin-left: -4px;
+	margin: 0 auto 20px;
 }
 
 .gallery-item {
@@ -1840,7 +1838,9 @@ footer.entry-meta {
 }
 
 .paging-navigation {
-	background-color: #e8e5ce;
+	background-color: darken(@bgColor, 5%);
+	font-family: Conv_ACaslonPro-Bold, Georgia, serif;
+	text-transform: uppercase;
 	padding: 40px 0;
 }
 
@@ -1860,25 +1860,23 @@ footer.entry-meta {
 }
 
 .paging-navigation a {
-	font-size: 22px;
-	font-style: italic;
-	font-weight: 300;
+	font-size: 18px;
 }
 
 .paging-navigation .meta-nav {
-	background-color: #e63f2a;
+	background-color: @linkColor;
 	border-radius: 50%;
 	color: #fff;
 	display: inline-block;
 	font-size: 26px;
-	padding: 3px 0 8px;
+	padding: 8px 0 3px;
 	text-align: center;
 	width: 50px;
 }
 
 .paging-navigation .nav-previous .meta-nav {
 	margin-right: 10px;
-	padding: 17px 0 23px;
+	padding: 22px 0 18px;
 	width: 80px;
 }
 
@@ -1887,7 +1885,7 @@ footer.entry-meta {
 }
 
 .paging-navigation a:hover .meta-nav {
-	background-color: #ea9629;
+	background-color: lighten(@linkColor, 5%);
 	text-decoration: none;
 }
 
@@ -3119,6 +3117,4 @@ footer.entry-meta {
 	}
 }
 
-.helloworld{
-	color: @color;
-}
+@import "page-specific-overrides";

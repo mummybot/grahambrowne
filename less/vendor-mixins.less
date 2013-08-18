@@ -9,4 +9,48 @@
 	-webkit-columns: @width @count;
 	-moz-columns: @width @count;
 	columns: @width @count;
+
+	-webkit-column-gap:40px;
+	-moz-column-gap:40px;
+	column-gap:40px;
+}
+
+@-webkit-keyframes fadeInFromNone {
+	0% {
+		display:none; 
+		opacity: 0;
+	}
+
+	1% {
+		display: block ; 
+		opacity: 0;
+	}
+
+	100% {
+		display: block ; 
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInFromNone {
+	0% {
+		display:none; 
+		opacity: 0;
+	}
+
+	1% {
+		display: block ; 
+		opacity: 0;
+	}
+
+	100% {
+		display: block ; 
+		opacity: 1;
+	}
+}
+
+.fadeInFromNone() {
+	display: block;
+	-webkit-animation: 0.25s fadeInFromNone;
+	animation: 0.25s fadeInFromNone;
 }

@@ -47,10 +47,6 @@ get_header(); ?>
 				</header><!-- .entry-header -->
 
 				<div class="entry-content">
-					<nav id="image-navigation" class="navigation image-navigation" role="navigation">
-						<span class="nav-previous"><?php previous_image_link( false, __( '<span class="meta-nav">&larr;</span> Previous', 'twentythirteen' ) ); ?></span>
-						<span class="nav-next"><?php next_image_link( false, __( 'Next <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?></span>
-					</nav><!-- #image-navigation -->
 
 					<div class="entry-attachment">
 						<div class="attachment">
@@ -72,6 +68,12 @@ get_header(); ?>
 					<?php endif; ?>
 
 				</div><!-- .entry-content -->
+				<nav id="image-navigation" class="navigation image-navigation" role="navigation">
+					<div class="nav-links">
+						<span class="nav-previous"><?php previous_image_link( false, __( '<span class="meta-nav">&larr;</span> Previous', 'twentythirteen' ) ); ?></span>
+						<span class="nav-next"><?php next_image_link( false, __( 'Next <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?></span>
+					</div>
+				</nav><!-- #image-navigation -->
 			</article><!-- #post -->
 
 			<?php comments_template(); ?>

@@ -801,8 +801,8 @@ img.wp-smiley,
 	text-align: center;
 	position: relative;
 	.home-link {
-		border-bottom: 1px solid @bgColor;
-		color: @bgColor;
+		border-bottom: 1px solid @headerColor;
+		color: @headerColor;
 		display: block;
 		margin: 0 auto;
 		max-width: 600px;
@@ -861,7 +861,7 @@ div.nav-menu > ul {
 	}
 	&:hover > a,
 	li a:hover {
-		color: lighten(@headerBgColor, 50%);;
+		color: lighten(@headerColor, 30%);;
 	}
 
 	.sub-menu,
@@ -898,7 +898,7 @@ ul.nav-menu li:hover > ul,
 .nav-menu .current_page_ancestor > a,
 .nav-menu .current-menu-item > a,
 .nav-menu .current-menu-ancestor > a {
-	color: lighten(@headerBgColor, 50%);
+	color: lighten(@headerColor, 30%);
 }
 
 .menu-toggle {
@@ -2521,7 +2521,7 @@ footer.entry-meta {
 
 .site-footer .widget {
 	background: transparent;
-	color: @bgColor;
+	color: @footerColor;
 	float: left;
 	margin-right: 20px;
 	width: 245px;
@@ -2537,13 +2537,18 @@ footer.entry-meta {
 }
 
 .site-footer .widget a {
-	color: @bgColor;
+	color: @footerColor;
+
+	&:hover {
+		color: lighten(@footerColor, 50%);
+		text-decoration: none;
+	}
 }
 
 .site-footer .widget-title,
 .site-footer .widget-title a,
 .site-footer .wp-caption-text {
-	color: @bgColor;
+	color: @footerColor;
 }
 
 .site-info {

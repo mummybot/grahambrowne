@@ -373,7 +373,7 @@ img {
   background-color: #8892be;
 }
 .post-format-audio a {
-  color: #2a1b32;
+  color: #25278e;
 }
 .post-format-audio:before {
   background: url(../images/dotted-line.png) repeat-y 85px 0;
@@ -393,14 +393,14 @@ img {
   background-color: #ced5e9;
 }
 .post-format-chat a {
-  color: #2a1b32;
+  color: #25278e;
 }
 /* Gallery */
 .post-format-gallery {
   background-color: #8892be;
 }
 .post-format-gallery a {
-  color: #2a1b32;
+  color: #25278e;
 }
 /* Image: same as Standard/Defaults */
 /* Link */
@@ -409,7 +409,7 @@ img {
 }
 /* Quote */
 .post-format-quote {
-  background-color: #3b2646;
+  background-color: #22248d;
   color: #d9deee;
 }
 .post-format-quote a {
@@ -446,7 +446,7 @@ img {
 }
 /* Status */
 .post-format-status {
-  background-color: #3b2646;
+  background-color: #22248d;
   color: #d9deee;
   padding: 0;
   padding-left: 35px;
@@ -483,7 +483,7 @@ img {
   background-color: #8892be;
 }
 .post-format-video a {
-  color: #2a1b32;
+  color: #25278e;
 }
 /**
  * 9.0 RTL

@@ -28,4 +28,4 @@ npm install -g grunt-cli
     grunt
     ```
 
-This will generate the CSS files from LESS, and watch files for any changes and livereload.
+    This will generate the CSS files from LESS, and watch files for any changes and livereload.

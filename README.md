@@ -16,16 +16,16 @@ npm install -g grunt-cli
 
 2. Install packages
 
-```
-npm install
-```
+    ```
+    npm install
+    ```
 
 3. For livereload to work modify the footer to point to the correct virtual host e.g. ```<script src="http://grahambrowne.local:35729/livereload.js"></script>```
 
 4. Run the grunt tasks
 
-```
-grunt
-``` 
+    ```
+    grunt
+    ```
 
 This will generate the CSS files from LESS, and watch files for any changes and livereload.
